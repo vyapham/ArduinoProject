@@ -77,7 +77,6 @@ void stateChange() {
 
 /*put your setup code here, to run once*/
 void setup() {
-//  myservo.attach(3);
   Serial.begin(9600); //Open the serial port and set the baud rate to 9600
 /*Set the defined pins to the output*/
   pinMode(in1,OUTPUT);
@@ -88,7 +87,7 @@ void setup() {
   pinMode(ENB,OUTPUT);
   pinMode(LED,OUTPUT);
 }
-/*put your main code here, to run repeatedly*/
+/*main function*/
 void loop() {
   getInput = Serial.read();
   if (getInput == 'f') {
